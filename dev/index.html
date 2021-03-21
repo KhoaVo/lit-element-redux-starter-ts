@@ -1,0 +1,27 @@
+<!doctype html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>&lt;my-element> Demo</title>
+    <script>
+      window.process = {
+        env: {
+          NODE_ENV: 'dev'
+        }
+      };
+    </script>
+    <script type="module" src="../src_compiled/components/example-element.js"></script>
+    <style>
+      p {
+        border: solid 1px blue;
+        padding: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <example-element>
+      <p>This is child content!</p>
+    </example-element>
+  </body>
+</html>
